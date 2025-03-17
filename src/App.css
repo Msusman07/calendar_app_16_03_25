@@ -13,6 +13,9 @@
   overflow: visible !important;
   position: relative !important;
 }
+.rbc-month-row{
+min-height : 100px;
+}
 
 .rbc-day-slot .rbc-event-content {
   line-height: 1.8 !important;
