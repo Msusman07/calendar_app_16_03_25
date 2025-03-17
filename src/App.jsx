@@ -123,6 +123,10 @@ const App = () => {
       alert("Google Meet link not available.");
     }
   };
+  const handleViewChange = (view) => {
+    setCurrentView(view);
+    setSelectedEvent(null);
+  };
   return (
     <div style={{ height: "100vh", padding: "20px" }}>
       <Calendar
@@ -133,7 +137,7 @@ const App = () => {
         views={{ month: true, week: true, day: true }}
         view={currentView}
         date={currentDate}
-        onView={(view) => setCurrentView(view)}
+        onView={(view) => handleViewChange(view)}
         onNavigate={(date) => setCurrentDate(date)}
         style={{ height: "90vh" }}
         components={{ event: EventComponent }}
