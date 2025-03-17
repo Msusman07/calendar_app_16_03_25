@@ -14,7 +14,7 @@
   position: relative !important;
 }
 .rbc-month-row{
-min-height : 100px;
+min-height : 100px !important;
 }
 
 .rbc-day-slot .rbc-event-content {
